@@ -1,0 +1,27 @@
+// Use REMs with a pixel fallback for font sizing.  Example: @include font-size(12px);
+@mixin font-size($font-size){
+  font-size: $font-size;
+  font-size: ($font-size / $base-font-size)*1rem;
+}
+
+// Hide text when using image sprite
+@mixin hide-text-inline {
+  display: inline-block;
+  text-indent: -120%;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+}
+
+// Variable equals nothing. Use in mixins where you don't want a value
+$null: "";
+
+// Font shorthand - use $null for when a value is not needed
+// Example: @include font($grey, $bold, $montserrat, $uppercase);
+// Example2: @include font($grey, $null, $montserrat, $uppercase);
+@mixin font($font-color, $font-weight, $font-family, $text-transform) {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    color: $font-color;
+    text-transform: $text-transform;
+}

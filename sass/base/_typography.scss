@@ -1,0 +1,9 @@
+// Base typography
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Arvo:700);
+
+// Establishing vertical rhythm for site readability
+$base-font-size: 14px;
+$base-line-height: 23px;
+@include establish-baseline;
