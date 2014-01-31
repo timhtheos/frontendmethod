@@ -16,6 +16,7 @@ l-branding and l-region-branding are blocks and the l says they are part of the 
 .tagline is a block while tagline--mobile is a modifier
 
 // tpl.php
+```html+php
     <div class="tagline">
           <?php print $site_slogan; ?>
     </div>
@@ -32,10 +33,11 @@ l-branding and l-region-branding are blocks and the l says they are part of the 
         </div>
       </div>
     </div>
-
+```
 
 
 // layout.scss
+```sass
 .l-branding {
   @include breakpoint(30em) {
     text-align: center;
@@ -73,5 +75,5 @@ l-branding and l-region-branding are blocks and the l says they are part of the 
   @include breakpoint(50em){
   }
 }
-
+```
 
