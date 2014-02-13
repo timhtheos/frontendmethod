@@ -1,0 +1,6 @@
+# Ignore phpStorm's
+.idea
+
+# Ignore OSX's DS_Stores
+_DS_Store
+.DS_Store
