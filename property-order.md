@@ -32,7 +32,6 @@ selector {
 }
 .dog__paw {
   background-color: brown;
-  
   position: absolute;
   bottom: 0;
 }
@@ -63,7 +62,7 @@ selector {
  * In a declaration, the property name should be immediately followed by a colon, then a single space, and then the property's value.
  * Include a semi-colon at the end of all declarations, including the last declaration in a declaration block.
  * When hex values are used for colors, use lowercase and, if possible, the shorthand syntax. Colors may be expressed with any valid CSS value, such as hex value, color keyword, rgb() or rgba(). Note that IE8 does not support all color syntaxes and will require a fallback value.
- * For property values that require quotes, use double quotes instead of single quotes.
+ * For property values that require quotes, use double quotes instead of single quotes.  For items inside quotes as property values, shall be separeted a single space.
  * Quote attribute values in selectors.
  * Where allowed, avoid specifying units for zero-values.
  * Include a space after each comma in comma-separated property or function values.
@@ -96,7 +95,7 @@ selector {
   * text
 5. Other declarations
 
-Mixins should be included first because of the cascading order - it should be easy to "reset" any properties defined in the included mixin
+Mixins should be included first because of the cascading order - it should be easy to "reset" any properties defined in the included mixin.  There shall be a single line space between the mixins and the other properties defined.
 
 ```sass
 .label__product {
